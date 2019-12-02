@@ -1,0 +1,28 @@
+{
+  "name": "@hiroppy/generator-ts-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "generators"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiroppy/generator-ts-base.git"
+  },
+  "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hiroppy/generator-ts-base/issues"
+  },
+  "homepage": "https://github.com/hiroppy/generator-ts-base#readme",
+  "dependencies": {
+    "yeoman-generator": "^4.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}

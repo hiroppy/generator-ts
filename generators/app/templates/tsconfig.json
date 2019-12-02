@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "./<%= output %>",
+    "declaration": true,
+    // "jsx": "react",
+    "lib": ["es2018", "dom"],
+    "types": ["jest"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowJs": false,
+    "sourceMap": true,
+    "removeComments": false, // to leave webpack's comment
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/*.test.ts",
+    "src/**/*.test.tsx",
+    "src/client/**/*.stories.ts"
+  ],
+  "include": ["src/**/*"]
+}

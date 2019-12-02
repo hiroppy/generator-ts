@@ -1,0 +1,16 @@
+{
+  "name": "<%= name %>",
+  "version": "0.0.1",
+  "types": "<%= output %>/index.d.ts",
+  "description": "",
+  "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me)",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "build": "tsc",
+    "rm:<%= output %>": "rimraf <%= output %>",
+    "lint": "eslint . --cache --ext .js,.ts,.tsx",
+    "fmt": "prettier --loglevel warn --write \"**/*.{js,ts,tsx,md,json,css}\""
+  }
+}
