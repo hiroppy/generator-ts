@@ -26,6 +26,6 @@
     "yeoman-generator": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "1.19.1"
   }
 }
