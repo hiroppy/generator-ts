@@ -1,5 +1,7 @@
 'use strict';
 
+const { existsSync } = require('fs');
+const { join } = require('path');
 const Generator = require('yeoman-generator');
 
 const dependencies = [];
@@ -34,6 +36,11 @@ class MyGenerator extends Generator {
   }
 
   async prompting() {
+    if (!existsSync(join(this.destinationPath('.'), '.git'))) {
+      console.error('Need to run git init.');
+      process.exit(1);
+    }
+
     this.log('Generator starting... 🤖');
 
     this.answers = await this.prompt([
