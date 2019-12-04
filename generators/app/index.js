@@ -18,6 +18,7 @@ const devDependencies = [
   '@typescript-eslint/parser',
   'eslint',
   'eslint-config-prettier',
+  'eslint-plugin-jest',
   'eslint-plugin-prettier',
   'husky',
   'jest',
@@ -55,10 +56,14 @@ class MyGenerator extends Generator {
   writing() {
     const { name, output } = this.answers;
 
+    this.fs.copyTpl(this.templatePath('.*'), this.destinationPath('.'), {
+      name,
+      output
+    });
+
     this.fs.copyTpl(this.templatePath('**'), this.destinationPath('.'), {
       name,
-      output,
-      globOptions: { dot: true }
+      output
     });
   }
 

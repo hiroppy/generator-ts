@@ -1,5 +1,5 @@
 {
-  "name": "@hiroppy/generator-ts-base",
+  "name": "@hiroppy/generator-ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hiroppy/generator-ts-base.git"
+    "url": "git+https://github.com/hiroppy/generator-ts.git"
   },
   "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hiroppy/generator-ts-base/issues"
+    "url": "https://github.com/hiroppy/generator-ts/issues"
   },
-  "homepage": "https://github.com/hiroppy/generator-ts-base#readme",
+  "homepage": "https://github.com/hiroppy/generator-ts#readme",
   "dependencies": {
     "yeoman-generator": "^4.2.0"
   },

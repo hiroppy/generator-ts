@@ -1,12 +1,6 @@
 node_modules
 .env
-dist
-storybook-static
 coverage
 node_trace*
-.awcache/
-.clinic
 .eslintcache
-
-# .env.dev
-# .env.prod
+<%= output %>

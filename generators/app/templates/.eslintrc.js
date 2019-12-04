@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: false,
-    node: true
+    node: true,
+    'jest/globals': true
   },
   parserOptions: {
     sourceType: 'module',
@@ -10,6 +11,7 @@ module.exports = {
       jsx: true
     }
   },
+  plugins: ['jest'],
   overrides: [
     {
       files: ['*.js'],
