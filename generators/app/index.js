@@ -27,6 +27,7 @@ const devDependencies = [
   'lint-staged',
   'prettier',
   'rimraf',
+  'standard-version',
   'typescript'
 ];
 

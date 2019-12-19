@@ -12,6 +12,7 @@
     "build": "tsc",
     "rm:<%= output %>": "rimraf <%= output %>",
     "lint": "eslint . --cache --ext .js,.ts,.tsx",
-    "fmt": "prettier --loglevel warn --write \"**/*.{js,ts,tsx,md,json,css}\""
+    "fmt": "prettier --loglevel warn --write \"**/*.{js,ts,tsx,md,json,css}\"",
+    "release": "standard-version"
   }
 }
