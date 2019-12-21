@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "standard-version"
   },
   "files": [
     "generators"
@@ -26,6 +27,7 @@
     "yeoman-generator": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "1.19.1"
+    "prettier": "1.19.1",
+    "standard-version": "^7.0.1"
   }
 }
