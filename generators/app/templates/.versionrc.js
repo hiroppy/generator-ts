@@ -1,3 +1,3 @@
 module.exports = {
-  types: [{ type: 'test', hidden: true }]
+  types: [{ type: 'test', hidden: true }],
 };

@@ -28,7 +28,7 @@ const devDependencies = [
   'prettier',
   'rimraf',
   'standard-version',
-  'typescript'
+  'typescript',
 ];
 
 class MyGenerator extends Generator {
@@ -49,15 +49,15 @@ class MyGenerator extends Generator {
         type: 'input',
         name: 'name',
         message: 'Input the name for this project',
-        validate: (input) => Boolean(input.length)
+        validate: (input) => Boolean(input.length),
       },
       {
         type: 'input',
         name: 'output',
         message: 'Input the output directory for this project',
         default: 'lib',
-        validate: (input) => Boolean(input.length)
-      }
+        validate: (input) => Boolean(input.length),
+      },
     ]);
   }
 
@@ -66,12 +66,12 @@ class MyGenerator extends Generator {
 
     this.fs.copyTpl(this.templatePath('.*'), this.destinationPath('.'), {
       name,
-      output
+      output,
     });
 
     this.fs.copyTpl(this.templatePath('**'), this.destinationPath('.'), {
       name,
-      output
+      output,
     });
   }
 

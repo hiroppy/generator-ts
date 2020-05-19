@@ -8,15 +8,15 @@ module.exports = (api) => {
         {
           // useBuiltIns: 'usage',
           // corejs: 'core-js@3',
-          // targets: { node: 'current' }
-        }
+          // targets: { node: 'current' }, // for regeneratorRuntime
+        },
       ],
-      '@babel/preset-typescript'
+      '@babel/preset-typescript',
     ],
     plugins: [
       '@babel/plugin-syntax-dynamic-import',
       '@babel/plugin-proposal-class-properties',
-      '@babel/plugin-proposal-object-rest-spread'
-    ]
+      '@babel/plugin-proposal-object-rest-spread',
+    ],
   };
 };

@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "main": "<%= output %>/index.js",
   "types": "<%= output %>/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "description": "",
   "author": "hiroppy <git@hiroppy.me> (https://hiroppy.me)",
   "license": "MIT",
@@ -13,6 +16,7 @@
     "rm:<%= output %>": "rimraf <%= output %>",
     "lint": "eslint . --cache --ext .js,.ts,.tsx",
     "fmt": "prettier --loglevel warn --write \"**/*.{js,ts,tsx,md,json,css}\"",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepublish": "npm run build"
   }
 }
