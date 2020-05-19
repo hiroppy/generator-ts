@@ -27,7 +27,7 @@
     "yeoman-generator": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "2.0.4",
+    "prettier": "2.0.5",
     "standard-version": "7.1.0"
   }
 }
