@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/hiroppy/generator-ts/compare/v1.2.0...v1.3.0) (2020-05-20)
+
+
+### Features
+
+* update stuff ([028a69b](https://github.com/hiroppy/generator-ts/commit/028a69b5b076b95ab08f25f45f5eed058d3cdb5f))
+
 ## [1.2.0](https://github.com/hiroppy/generator-ts/compare/v1.1.0...v1.2.0) (2020-05-19)
 
 
