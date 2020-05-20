@@ -11,8 +11,12 @@ $ npm i <%= name %>
 
 ## Usage
 
+```javascript
+```
+
 ## Development
 
 ```sh
+$ npm i
 $ npm start
 ```

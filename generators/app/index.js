@@ -4,17 +4,23 @@ const { existsSync } = require('fs');
 const { join } = require('path');
 const Generator = require('yeoman-generator');
 
-const dependencies = [];
-const devDependencies = [
-  'rimraf',
+const node = {
+  dev: ['@types/node'],
+};
+const babel = [
   '@babel/cli',
   '@babel/core',
   '@babel/plugin-proposal-class-properties',
   '@babel/plugin-proposal-object-rest-spread',
   '@babel/plugin-syntax-dynamic-import',
   '@babel/preset-env',
-  '@babel/preset-react',
+  '@babel/preset-react', // need to ask
   '@babel/preset-typescript',
+];
+
+const dependencies = [];
+const devDependencies = [
+  'rimraf',
   '@types/jest',
   '@typescript-eslint/eslint-plugin',
   '@typescript-eslint/parser',
@@ -29,6 +35,8 @@ const devDependencies = [
   'rimraf',
   'standard-version',
   'typescript',
+  'ts-jest',
+  ...node.dev,
 ];
 
 class MyGenerator extends Generator {
@@ -38,7 +46,7 @@ class MyGenerator extends Generator {
 
   async prompting() {
     if (!existsSync(join(this.destinationPath('.'), '.git'))) {
-      console.error('Need to run git init.');
+      console.error('Need to run git init at first.');
       process.exit(1);
     }
 
@@ -68,7 +76,10 @@ class MyGenerator extends Generator {
       name,
       output,
     });
-
+    this.fs.copyTpl(this.templatePath('.github'), this.destinationPath('.github'), {
+      name,
+      output,
+    });
     this.fs.copyTpl(this.templatePath('**'), this.destinationPath('.'), {
       name,
       output,
@@ -81,8 +92,6 @@ class MyGenerator extends Generator {
   }
 
   end() {
-    // TODO: delete .DS_Store
-
     this.log('Bye... 👋');
   }
 }

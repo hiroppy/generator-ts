@@ -4,9 +4,10 @@
     "declaration": true,
     // "jsx": "react",
     "lib": ["es2018", "dom"],
-    "types": ["jest"],
+    "types": ["jest", "node"],
     "module": "commonjs",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "allowJs": false,
     "sourceMap": true,
     "removeComments": false, // to leave webpack's comment

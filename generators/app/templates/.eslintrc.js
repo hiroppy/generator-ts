@@ -6,7 +6,7 @@ module.exports = {
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2018,
+    ecmaVersion: 2019,
     ecmaFeatures: {
       jsx: true,
     },
@@ -28,7 +28,9 @@ module.exports = {
       ],
       plugins: ['@typescript-eslint'],
       parser: '@typescript-eslint/parser',
-      rules: {},
+      rules: {
+        '@typescript-eslint/explicit-function-return-type': 0,
+      },
     },
   ],
 };

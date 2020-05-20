@@ -4,6 +4,4 @@ afterAll(() => {
   jest.resetAllMocks();
 });
 
-afterEach(() => {
-  delete process.env.IS_BROWSER;
-});
+afterEach(() => {});

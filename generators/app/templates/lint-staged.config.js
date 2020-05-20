@@ -1,4 +1,4 @@
-const baseTasks = ['prettier --write', 'git add'];
+const baseTasks = ['prettier --write'];
 
 module.exports = {
   '*.{md,json,css}': baseTasks,
