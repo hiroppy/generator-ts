@@ -7,16 +7,16 @@ const Generator = require('yeoman-generator');
 const node = {
   dev: ['@types/node'],
 };
-const babel = [
-  '@babel/cli',
-  '@babel/core',
-  '@babel/plugin-proposal-class-properties',
-  '@babel/plugin-proposal-object-rest-spread',
-  '@babel/plugin-syntax-dynamic-import',
-  '@babel/preset-env',
-  '@babel/preset-react', // need to ask
-  '@babel/preset-typescript',
-];
+// const babel = [
+//   '@babel/cli',
+//   '@babel/core',
+//   '@babel/plugin-proposal-class-properties',
+//   '@babel/plugin-proposal-object-rest-spread',
+//   '@babel/plugin-syntax-dynamic-import',
+//   '@babel/preset-env',
+//   '@babel/preset-react', // need to ask
+//   '@babel/preset-typescript',
+// ];
 
 const dependencies = [];
 const devDependencies = [
