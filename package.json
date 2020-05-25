@@ -29,8 +29,8 @@
     "yeoman-generator": "^4.10.1"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "3.0.0",
-    "@typescript-eslint/parser": "3.0.0",
+    "@typescript-eslint/eslint-plugin": "3.0.1",
+    "@typescript-eslint/parser": "3.0.1",
     "eslint": "7.1.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-jest": "23.13.1",
