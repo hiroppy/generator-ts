@@ -36,7 +36,7 @@
     "eslint-plugin-jest": "23.13.2",
     "eslint-plugin-prettier": "3.1.4",
     "prettier": "2.0.5",
-    "standard-version": "8.0.1",
+    "standard-version": "8.0.2",
     "typescript": "3.9.6"
   }
 }
