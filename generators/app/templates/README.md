@@ -12,6 +12,7 @@ $ npm i <%= name %>
 ## Usage
 
 ```javascript
+
 ```
 
 ## Development
