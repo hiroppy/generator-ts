@@ -31,12 +31,12 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "4.14.2",
     "@typescript-eslint/parser": "4.14.2",
-    "eslint": "7.26.0",
+    "eslint": "7.32.0",
     "eslint-config-prettier": "7.2.0",
-    "eslint-plugin-jest": "24.3.7",
+    "eslint-plugin-jest": "24.7.0",
     "eslint-plugin-prettier": "3.4.1",
-    "prettier": "2.2.1",
-    "standard-version": "9.3.2",
-    "typescript": "4.2.4"
+    "prettier": "2.8.8",
+    "standard-version": "9.5.0",
+    "typescript": "4.9.5"
   }
 }
